@@ -1,0 +1,7 @@
+FROM alpine as build
+RUN wget "https://github.com/giwty/switch-library-manager/releases/download/1.4.0/switch-library-manager.Console.linux.zip" -O switch-library-manager.zip
+RUN unzip switch-library-manager.zip
+COPY settings.json /settings.json
+ENTRYPOINT ["./switch-library-manager"]
+# Create space for prod.keys file, that will be mounted at runtime
+# Install settings.json

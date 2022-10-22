@@ -1,0 +1,18 @@
+{
+    "prod_keys": "/prod.keys",
+    "gui": false,
+    "debug": true,
+    "check_for_missing_updates": true,
+    "check_for_missing_dlc": true,
+    "organize_options": {
+        "create_folder_per_game": true,
+        "rename_files": true,
+        "delete_empty_folders": true,
+        "delete_old_update_files": true,
+        "folder_name_template": "{TITLE_NAME}",
+        "switch_safe_file_names": true,
+        "file_name_template": "{TITLE_NAME} ({DLC_NAME})[{TITLE_ID}][v{VERSION}]"
+    },
+    "scan_recursively": true,
+    "ignore_dlc_title_ids": []
+}

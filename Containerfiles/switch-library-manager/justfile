@@ -1,0 +1,13 @@
+image-name := "switch-library-manager"
+
+default:
+    just --list
+
+build:
+    podman build --tag {{image-name}} .
+
+debug:
+    podman run --interactive --tty --entrypoint /bin/sh {{image-name}}
+
+run:
+    podman run {{image-name}}
